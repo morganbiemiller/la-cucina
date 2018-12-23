@@ -1,0 +1,45 @@
+$light-cream: #fff8f0;
+$off-black: #0f0f0e;
+
+$bg: $light-cream;
+$text: $off-black;
+$padding: 20px;
+
+$font_path: '~@/assets/fonts/';
+
+// *********** //
+// SOURCE SANS //
+// ITALIC
+@font-face{
+  font-family    : 'Mohave-Regular';
+  src            : url($font_path +'Mohave-Regular.otf') format('otf'); /* Modern Browsers */
+  font-style     :normal;
+  font-weight    : 400;
+  text-rendering : optimizeLegibility;
+}
+
+@mixin type-medium {
+  font-family: 'Mohave-Medium', monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin type-standard {
+  font-family: 'Mohave-Regular', monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin type-thin {
+  font-family: 'Mohave-Light', monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@mixin padding() {
+  padding: $padding;
+}
+
+@mixin transition() {
+  transition: 225ms all;
+}
